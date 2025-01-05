@@ -248,7 +248,7 @@ pub trait BuildChildren {
 
     /// Spawns the passed bundle and adds it to this entity as a child.
     ///
-    /// The bundle's [`Parent`] component will be updated to the new parent, or added if not present.
+    /// The bundle's [`Parent`] component will be updated to the new parent.
     ///
     /// For efficient spawning of multiple children, use [`with_children`].
     ///
@@ -258,7 +258,7 @@ pub trait BuildChildren {
     /// Pushes children to the back of the builder's children. For any entities that are
     /// already a child of this one, this method does nothing.
     ///
-    /// The children's [`Parent`] component will be updated to the new parent, or added if not present.
+    /// The children's [`Parent`] component will be updated to the new parent.
     ///
     /// If the children were previously children of another parent, that parent's [`Children`] component
     /// will have those children removed from its list. Removing all children from a parent causes its
@@ -271,7 +271,7 @@ pub trait BuildChildren {
 
     /// Inserts children at the given index.
     ///
-    /// The children's [`Parent`] component will be updated to the new parent, or added if not present.
+    /// The children's [`Parent`] component will be updated to the new parent.
     ///
     /// If the children were previously children of another parent, that parent's [`Children`] component
     /// will have those children removed from its list. Removing all children from a parent causes its
@@ -289,7 +289,7 @@ pub trait BuildChildren {
 
     /// Adds a single child.
     ///
-    /// The child's [`Parent`] component will be updated to the new parent, or added if not present.
+    /// The child's [`Parent`] component will be updated to the new parent.
     ///
     /// If the child was previously the child of another parent, that parent's [`Children`] component
     /// will have the child removed from its list. Removing all children from a parent causes its
@@ -306,7 +306,7 @@ pub trait BuildChildren {
 
     /// Removes all current children from this entity, replacing them with the specified list of entities.
     ///
-    /// The added children's [`Parent`] component will be updated to the new parent, or added if not present.
+    /// The added children's [`Parent`] component will be updated to the new parent.
     /// The removed children will have their [`Parent`] component removed.
     ///
     /// # Panics
