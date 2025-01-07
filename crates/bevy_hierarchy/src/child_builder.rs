@@ -283,7 +283,7 @@ pub trait BuildChildren {
     fn insert_children(&mut self, index: usize, children: &[Entity]) -> &mut Self;
 
     /// Removes the given children.
-    /// 
+    ///
     /// The removed children will have their [`Parent`] component removed.
     ///
     /// Removing all children from a parent causes its [`Children`] component to be removed from the entity.
