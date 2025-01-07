@@ -282,7 +282,9 @@ pub trait BuildChildren {
     /// Panics if any of the children are the same as the parent.
     fn insert_children(&mut self, index: usize, children: &[Entity]) -> &mut Self;
 
-    /// Removes the given children. This removes the [`Parent`] component from the children.
+    /// Removes the given children.
+    /// 
+    /// The removed children will have their [`Parent`] component removed.
     ///
     /// Removing all children from a parent causes its [`Children`] component to be removed from the entity.
     fn remove_children(&mut self, children: &[Entity]) -> &mut Self;
