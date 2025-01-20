@@ -10,25 +10,25 @@ keywords = ["bevy"]
 
 [dependencies]
 # bevy
-bevy_app = { workspace = true }
-bevy_asset = { workspace = true }
-bevy_ecs = { workspace = true }
-bevy_math = { workspace = true }
-bevy_reflect = { workspace = true, features = [
+bevy_app = { workspace = true, default-features = true }
+bevy_asset = { workspace = true, default-features = true }
+bevy_ecs = { workspace = true, default-features = true }
+bevy_math = { workspace = true, default-features = true }
+bevy_reflect = { workspace = true, default-features = true, features = [
   "bevy",
 ] }
-bevy_transform = { workspace = true }
-bevy_derive = { workspace = true }
+bevy_transform = { workspace = true, default-features = true }
+bevy_derive = { workspace = true, default-features = true }
 
 # other
-rodio = { version = "0.20", default-features = false }
-tracing = { version = "0.1", default-features = false, features = ["std"] }
+rodio = { version = "0.20" }
+tracing = { version = "0.1", features = ["std"] }
 
 [target.'cfg(target_os = "android")'.dependencies]
 cpal = { version = "0.15", optional = true }
 
 [target.'cfg(target_arch = "wasm32")'.dependencies]
-rodio = { version = "0.20", default-features = false, features = [
+rodio = { version = "0.20", features = [
   "wasm-bindgen",
 ] }
 

@@ -18,28 +18,28 @@ pbr_anisotropy_texture = ["bevy_pbr/pbr_anisotropy_texture"]
 
 [dependencies]
 # bevy
-bevy_animation = { workspace = true, optional = true }
-bevy_app = { workspace = true }
-bevy_asset = { workspace = true }
-bevy_color = { workspace = true }
-bevy_core_pipeline = { workspace = true }
-bevy_ecs = { workspace = true }
-bevy_image = { workspace = true }
-bevy_math = { workspace = true }
-bevy_pbr = { workspace = true }
-bevy_reflect = { workspace = true, features = [
+bevy_animation = { workspace = true, default-features = true, optional = true }
+bevy_app = { workspace = true, default-features = true }
+bevy_asset = { workspace = true, default-features = true }
+bevy_color = { workspace = true, default-features = true }
+bevy_core_pipeline = { workspace = true, default-features = true }
+bevy_ecs = { workspace = true, default-features = true }
+bevy_image = { workspace = true, default-features = true }
+bevy_math = { workspace = true, default-features = true }
+bevy_pbr = { workspace = true, default-features = true }
+bevy_reflect = { workspace = true, default-features = true, features = [
   "bevy",
 ] }
-bevy_render = { workspace = true }
-bevy_scene = { workspace = true, features = [
+bevy_render = { workspace = true, default-features = true }
+bevy_scene = { workspace = true, default-features = true, features = [
   "bevy_render",
 ] }
-bevy_transform = { workspace = true }
-bevy_tasks = { workspace = true }
-bevy_utils = { workspace = true }
+bevy_transform = { workspace = true, default-features = true }
+bevy_tasks = { workspace = true, default-features = true }
+bevy_utils = { workspace = true, default-features = true }
 
 # other
-gltf = { version = "1.4.0", default-features = false, features = [
+gltf = { version = "1.4.0", features = [
   "KHR_lights_punctual",
   "KHR_materials_transmission",
   "KHR_materials_ior",
@@ -52,16 +52,16 @@ gltf = { version = "1.4.0", default-features = false, features = [
   "names",
   "utils",
 ] }
-thiserror = { version = "2", default-features = false }
+thiserror = { version = "2" }
 base64 = "0.22.0"
 percent-encoding = "2.1"
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1"
 smallvec = "1.11"
-tracing = { version = "0.1", default-features = false, features = ["std"] }
+tracing = { version = "0.1", features = ["std"] }
 
 [dev-dependencies]
-bevy_log = { workspace = true }
+bevy_log = { workspace = true, default-features = true }
 
 [lints]
 workspace = true

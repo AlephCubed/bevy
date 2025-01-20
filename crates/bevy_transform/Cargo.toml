@@ -10,19 +10,19 @@ keywords = ["bevy"]
 
 [dependencies]
 # bevy
-bevy_app = { workspace = true, default-features = false, optional = true }
-bevy_ecs = { workspace = true, default-features = false, optional = true }
-bevy_math = { workspace = true, default-features = false }
-bevy_reflect = { workspace = true, default-features = false, optional = true }
-serde = { version = "1", default-features = false, features = [
+bevy_app = { workspace = true, optional = true }
+bevy_ecs = { workspace = true, optional = true }
+bevy_math = { workspace = true }
+bevy_reflect = { workspace = true, optional = true }
+serde = { version = "1", features = [
   "derive",
 ], optional = true }
-thiserror = { version = "2", default-features = false }
-derive_more = { version = "1", default-features = false, features = ["from"] }
+thiserror = { version = "2" }
+derive_more = { version = "1", features = ["from"] }
 
 [dev-dependencies]
-bevy_tasks = { workspace = true }
-bevy_math = { workspace = true, default-features = false, features = [
+bevy_tasks = { workspace = true, default-features = true }
+bevy_math = { workspace = true, features = [
   "approx",
 ] }
 approx = "0.5.1"

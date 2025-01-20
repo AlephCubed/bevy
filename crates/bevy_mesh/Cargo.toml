@@ -10,26 +10,26 @@ keywords = ["bevy"]
 
 [dependencies]
 # bevy
-bevy_asset = { workspace = true }
-bevy_image = { workspace = true }
-bevy_math = { workspace = true }
-bevy_reflect = { workspace = true, features = [
+bevy_asset = { workspace = true, default-features = true }
+bevy_image = { workspace = true, default-features = true }
+bevy_math = { workspace = true, default-features = true }
+bevy_reflect = { workspace = true, default-features = true, features = [
   "bevy",
 ] }
-bevy_ecs = { workspace = true }
-bevy_transform = { workspace = true }
-bevy_mikktspace = { workspace = true }
-bevy_derive = { workspace = true }
-bevy_utils = { workspace = true }
+bevy_ecs = { workspace = true, default-features = true }
+bevy_transform = { workspace = true, default-features = true }
+bevy_mikktspace = { workspace = true, default-features = true }
+bevy_derive = { workspace = true, default-features = true }
+bevy_utils = { workspace = true, default-features = true }
 
 # other
 bitflags = { version = "2.3", features = ["serde"] }
 bytemuck = { version = "1.5" }
-wgpu-types = { version = "23", default-features = false }
+wgpu-types = { version = "23" }
 serde = { version = "1", features = ["derive"] }
 hexasphere = "15.0"
-thiserror = { version = "2", default-features = false }
-tracing = { version = "0.1", default-features = false, features = ["std"] }
+thiserror = { version = "2" }
+tracing = { version = "0.1", features = ["std"] }
 
 [lints]
 workspace = true
