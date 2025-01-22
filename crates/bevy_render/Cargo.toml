@@ -36,18 +36,13 @@ detailed_trace = []
 # bevy
 bevy_app = { workspace = true }
 bevy_asset = { workspace = true }
-bevy_color = { workspace = true, features = [
-  "serialize",
-  "wgpu-types",
-] }
+bevy_color = { workspace = true, features = ["serialize", "wgpu-types"] }
 bevy_derive = { workspace = true }
 bevy_diagnostic = { workspace = true }
 bevy_ecs = { workspace = true }
 bevy_encase_derive = { workspace = true }
 bevy_math = { workspace = true }
-bevy_reflect = { workspace = true, features = [
-  "bevy",
-] }
+bevy_reflect = { workspace = true, features = ["bevy"] }
 bevy_render_macros = { path = "macros", version = "0.16.0-dev" }
 bevy_time = { workspace = true }
 bevy_transform = { workspace = true }

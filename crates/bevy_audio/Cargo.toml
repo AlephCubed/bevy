@@ -14,9 +14,7 @@ bevy_app = { workspace = true }
 bevy_asset = { workspace = true }
 bevy_ecs = { workspace = true }
 bevy_math = { workspace = true }
-bevy_reflect = { workspace = true, features = [
-  "bevy",
-] }
+bevy_reflect = { workspace = true, features = ["bevy"] }
 bevy_transform = { workspace = true }
 bevy_derive = { workspace = true }
 

@@ -16,9 +16,7 @@ http = ["dep:async-io", "dep:smol-hyper"]
 # bevy
 bevy_app = { workspace = true }
 bevy_derive = { workspace = true }
-bevy_ecs = { workspace = true, features = [
-  "serialize",
-] }
+bevy_ecs = { workspace = true, features = ["serialize"] }
 bevy_reflect = { workspace = true }
 bevy_tasks = { workspace = true }
 bevy_utils = { workspace = true }

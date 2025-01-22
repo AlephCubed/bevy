@@ -27,13 +27,9 @@ bevy_ecs = { workspace = true }
 bevy_image = { workspace = true }
 bevy_math = { workspace = true }
 bevy_pbr = { workspace = true }
-bevy_reflect = { workspace = true, features = [
-  "bevy",
-] }
+bevy_reflect = { workspace = true, features = ["bevy"] }
 bevy_render = { workspace = true }
-bevy_scene = { workspace = true, features = [
-  "bevy_render",
-] }
+bevy_scene = { workspace = true, features = ["bevy_render"] }
 bevy_transform = { workspace = true }
 bevy_tasks = { workspace = true }
 bevy_utils = { workspace = true }

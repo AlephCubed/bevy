@@ -16,10 +16,7 @@ bevy_color = { workspace = true }
 bevy_derive = { workspace = true }
 bevy_log = { workspace = true }
 bevy_math = { workspace = true }
-bevy_reflect = { workspace = true, features = [
-  "bevy",
-  "petgraph",
-] }
+bevy_reflect = { workspace = true, features = ["bevy", "petgraph"] }
 bevy_render = { workspace = true }
 bevy_time = { workspace = true }
 bevy_utils = { workspace = true }

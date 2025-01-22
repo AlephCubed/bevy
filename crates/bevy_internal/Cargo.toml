@@ -275,14 +275,10 @@ bevy_state = { path = "../bevy_state", optional = true, version = "0.16.0-dev" }
 bevy_input = { workspace = true }
 bevy_input_focus = { workspace = true }
 bevy_log = { workspace = true }
-bevy_math = { workspace = true, features = [
-  "bevy_reflect",
-] }
+bevy_math = { workspace = true, features = ["bevy_reflect"] }
 bevy_platform_support = { workspace = true }
 bevy_ptr = { workspace = true }
-bevy_reflect = { workspace = true, features = [
-  "bevy",
-] }
+bevy_reflect = { workspace = true, features = ["bevy"] }
 bevy_time = { workspace = true }
 bevy_transform = { workspace = true }
 bevy_utils = { workspace = true }

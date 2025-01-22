@@ -13,9 +13,7 @@ keywords = ["bevy"]
 bevy_asset = { workspace = true }
 bevy_image = { workspace = true }
 bevy_math = { workspace = true }
-bevy_reflect = { workspace = true, features = [
-  "bevy",
-] }
+bevy_reflect = { workspace = true, features = ["bevy"] }
 bevy_ecs = { workspace = true }
 bevy_transform = { workspace = true }
 bevy_mikktspace = { workspace = true }

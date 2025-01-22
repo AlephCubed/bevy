@@ -40,14 +40,9 @@ zstd = ["ruzstd"]
 # bevy
 bevy_app = { workspace = true }
 bevy_asset = { workspace = true }
-bevy_color = { workspace = true, features = [
-  "serialize",
-  "wgpu-types",
-] }
+bevy_color = { workspace = true, features = ["serialize", "wgpu-types"] }
 bevy_math = { workspace = true }
-bevy_reflect = { workspace = true, features = [
-  "bevy",
-], optional = true }
+bevy_reflect = { workspace = true, features = ["bevy"], optional = true }
 bevy_utils = { workspace = true }
 
 # rendering

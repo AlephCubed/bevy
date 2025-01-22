@@ -39,9 +39,7 @@ bevy_derive = { workspace = true }
 bevy_ecs = { workspace = true }
 bevy_image = { workspace = true }
 bevy_math = { workspace = true }
-bevy_reflect = { workspace = true, features = [
-  "bevy",
-] }
+bevy_reflect = { workspace = true, features = ["bevy"] }
 bevy_render = { workspace = true }
 bevy_tasks = { workspace = true, optional = true }
 bevy_transform = { workspace = true }

@@ -22,9 +22,7 @@ trace = []
 bevy_asset_macros = { path = "macros", version = "0.16.0-dev" }
 bevy_app = { workspace = true }
 bevy_ecs = { workspace = true }
-bevy_reflect = { workspace = true, features = [
-  "uuid",
-] }
+bevy_reflect = { workspace = true, features = ["uuid"] }
 bevy_tasks = { workspace = true }
 bevy_utils = { workspace = true }
 

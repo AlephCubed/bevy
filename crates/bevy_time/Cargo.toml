@@ -15,12 +15,8 @@ serialize = ["serde"]
 [dependencies]
 # bevy
 bevy_app = { workspace = true }
-bevy_ecs = { workspace = true, features = [
-  "bevy_reflect",
-] }
-bevy_reflect = { workspace = true, features = [
-  "bevy",
-], optional = true }
+bevy_ecs = { workspace = true, features = ["bevy_reflect"] }
+bevy_reflect = { workspace = true, features = ["bevy"], optional = true }
 bevy_platform_support = { workspace = true, default-features = false, features = [
   "std",
 ] }
